@@ -11,7 +11,6 @@ export function FormWithValidation(): JSX.Element {
     <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
       {(formProps: FormikProps<FormState>) => (
         <Form>
-
           <p>
             First name:
             <Field name={"firstName"}/>
@@ -36,11 +35,10 @@ export function FormWithValidation(): JSX.Element {
             <MaybeShowError name='age' formProps={formProps}/>
           </p>
 
-          <p>Zip code:
+          <p>Zip code with country:
             <Field name="zip"/>
             <MaybeShowError name='zip' formProps={formProps}/>
           </p>
-
 
           <p>
             <b>Preference:</b>

@@ -25,6 +25,19 @@ export function FormWithAdvancedValidation(): JSX.Element {
           </p>
 
           <p>
+            <b>Email:</b>
+          </p>
+          <p>
+            <Field type="radio" name="emailRadio" value="default"/>Use default address<br/>
+            <Field type="radio" name="emailRadio" value="enter"/>Enter new<br/>
+
+            <Field name="email"/>
+            <MaybeShowError name='email' formProps={formProps}/>
+
+          </p>
+
+
+          <p>
             <input type={"submit"}/>
             <button onClick={() => console.log(formProps)}>Output formik props</button>
           </p>
