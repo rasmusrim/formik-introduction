@@ -31,6 +31,17 @@ export function FormWithValidation(): JSX.Element {
 
           </p>
 
+          <p>Age:
+            <Field name="age" type="number"/>
+            <MaybeShowError name='age' formProps={formProps}/>
+          </p>
+
+          <p>Zip code:
+            <Field name="zip"/>
+            <MaybeShowError name='zip' formProps={formProps}/>
+          </p>
+
+
           <p>
             <b>Preference:</b>
           </p>
